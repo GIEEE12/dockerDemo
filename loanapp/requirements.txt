@@ -1,0 +1,16 @@
+cffi==1.14.2
+click==7.1.2
+cryptography==2.9.2
+DateTime==4.3
+Flask==1.1.2
+itsdangerous==1.1.0
+Jinja2==2.11.2
+jwt==1.0.0
+MarkupSafe==1.1.1
+pycparser==2.20
+PyJWT==1.7.1
+pytz==2020.1
+six==1.15.0
+Werkzeug==1.0.1
+zope.interface==5.1.0
+uWSGI==2.0.18

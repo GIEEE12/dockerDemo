@@ -1,0 +1,32 @@
+version: "3.7"
+
+services:
+
+    loanapp:
+        build: ./loanapp
+        container_name: loanapp
+        restart: always
+        environment: 
+            - APP_NAME=FLASKDEMOAPI
+        expose: 
+            - 8080
+
+    creditcardapp:
+        build: ./creditcardapp
+        container_name: creditcardapp
+        restart: always
+        environment: 
+            - APP_NAME=FLASKDEMOAPICC
+        expose: 
+            - 8081
+
+    nginx:
+        build: ./nginx 
+        container_name: nginxloanapp
+        restart: always
+        ports: 
+            - 80:80
+            - 8081:8081
+  
+           
+
